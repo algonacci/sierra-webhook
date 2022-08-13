@@ -1,0 +1,32 @@
+{
+  "name": "sierra-webhook",
+  "version": "1.0.0",
+  "description": "The source code of webhook for Sierra chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algonacci/sierra-webhook.git"
+  },
+  "keywords": [
+    "Chatbot",
+    "Dialogflow"
+  ],
+  "author": "Eric Julianto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/algonacci/sierra-webhook/issues"
+  },
+  "homepage": "https://github.com/algonacci/sierra-webhook#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
+}
