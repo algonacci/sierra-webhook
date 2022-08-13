@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra v1</title>
+</head>
+
+<body>
+    <h1>Sierra v1</h1>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Zira-Personal" agent-id="0e8ff2fe-5915-4bae-ac53-27a2424013af"
+        language-code="id">
+    </df-messenger>
+    <script>
+        $(document).ready(function () {
+            window.addEventListener('dfMessengerLoaded', function (event) {
+                $r1 = document.querySelector("df-messenger");
+                $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+                $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+                var sheet = new CSSStyleSheet;
+                // manage box height from here
+                sheet.replaceSync(`div.chat-wrapper[opened="true"] { height: 500px }`);
+                $r2.shadowRoot.adoptedStyleSheets = [sheet];
+            });
+        });
+    </script>
+</body>
+
+</html>
